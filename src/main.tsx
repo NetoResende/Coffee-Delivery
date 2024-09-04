@@ -10,12 +10,11 @@ import { Success } from "./pages/Success/index.tsx";
 
 const router = createBrowserRouter([
   {
-    path: "/",
     element: <App />,
     errorElement: <ErroPages />,
     children: [
       {
-        path: "/home",
+        path: "/",
         element: <Home />,
       },
       {
