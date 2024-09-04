@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
-export const Card = styled.section `
+export const Card = styled.section`
   position: relative;
+  background-image: url("/images/hero-bg.svg");
+  background-size: cover;
   img#card-bg {
     position: absolute;
     top: 0;
@@ -12,7 +14,7 @@ export const Card = styled.section `
   }
 `;
 
-export const CardContainer = styled.div `
+export const CardContainer = styled.div`
   max-width: 1160px;
   padding: 92px 20px;
   margin: 0 auto;
@@ -27,19 +29,19 @@ export const CardContainer = styled.div `
   }
 `;
 
-export const CardHeader = styled.div `
+export const CardHeader = styled.div`
   display: flex;
   flex-direction: column;
   gap: 16px;
   > h1 {
-    color: ${props => props.theme.colors['base-title']};
+    color: ${(props) => props.theme.colors["base-title"]};
   }
   > span {
-    color: ${props => props.theme.colors['base-subtitle']};
-  } 
+    color: ${(props) => props.theme.colors["base-subtitle"]};
+  }
 `;
 
-export const CardInfo = styled.div `
+export const CardInfo = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-row-gap: 20px;
@@ -54,7 +56,7 @@ export const CardInfo = styled.div `
   }
 `;
 
-export const CardCoffeeList = styled.div `
+export const CardCoffeeList = styled.div`
   max-width: 1160px;
   padding: 32px 20px 150px;
   margin: 0 auto;
@@ -62,7 +64,7 @@ export const CardCoffeeList = styled.div `
   flex-direction: column;
   gap: 54px;
   > h2 {
-    color: ${props => props.theme.colors['base-subtitle']};
+    color: ${(props) => props.theme.colors["base-subtitle"]};
   }
   > div {
     display: grid;
