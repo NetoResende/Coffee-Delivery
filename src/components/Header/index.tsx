@@ -7,7 +7,7 @@ export function Header(){
   const { cart} = useCart()
   return (
     <Container>
-      <Link to='/home'>
+      <Link to='/'>
        <img src="/logo.svg" alt="coffee Delivery" />
       </Link>
       <Aside>

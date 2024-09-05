@@ -46,7 +46,7 @@ type FormInputs = {
 };
 
 const newOrder = z.object({
-  cep: z.number({ invalid_type_error: "Informe o CEP" }),
+   cep: z.number({ invalid_type_error: "Informe o CEP" }),
   street: z.string().min(1, "Informe a rua"),
   number: z.string().min(1, "Informe o número"),
   fullAddress: z.string(),
@@ -115,7 +115,6 @@ export function Cart() {
     if (cart.length === 0) {
       return alert("É preciso ter pelo menos um item no carrinho");
     }
-
     checkout(data);
   };
 
@@ -139,7 +138,7 @@ export function Cart() {
             <AddressForm>
               <TextInput
                 placeholder="CEP"
-                type="number"
+               type="number"
                 containerProps={{ style: { gridArea: "cep" } }}
                 error={errors.cep}
                 {...register("cep", { valueAsNumber: true })}
